@@ -208,7 +208,7 @@ select:focus {
     opacity: 0.8;
 }
 
-@media (max-width: 960px){
+@media screen and (max-width: 960px){
     a{ color: #ffffff; }
 
     .menu-mobile{
@@ -245,6 +245,45 @@ select:focus {
         width: 100%;
         margin: 500px auto 0 auto;
         float: none;
+        margin-top: 4vh;
+    }
+
+    .header-text h1{
+        font-size: 6vw;
+        font-weight: 700;
+        line-height: 1.3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+    
+    .header-text p{
+        font-size: 2.5vw;
+        margin-top: 1vw;
+        letter-spacing: .1rem;
+        line-height: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .btn-header{
+       background-color: #00c3ff;
+       padding: 1rem 3rem;
+       margin: 0 auto;
+    }
+}
+
+@media (max-width: 414px){
+
+    .header-text{
+        width: 100%;
+        margin: 500px auto 0 auto;
+        float: none;
         margin-top: 12vh;
     }
 
@@ -260,22 +299,22 @@ select:focus {
     
     .header-text p{
         font-size: 4vw;
-        margin-top: 2vw;
+        margin-top: 1vw;
         letter-spacing: .1rem;
-        line-height: 1.em;
+        line-height: 1.5em;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-bottom: 3rem;
+        padding-bottom: 2rem;
         padding-left: 2rem;
         padding-right: 2rem;
     }
 
     .btn-header{
-       background-color: #00c3ff;
-       padding: 1rem 3rem;
-       margin: 0 auto;
-    }
+        background-color: #ff0000;
+        padding: 1rem 3rem;
+        margin: 0 auto;
+     }
 }
 
 
