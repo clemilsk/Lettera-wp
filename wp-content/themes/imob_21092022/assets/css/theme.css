@@ -4,7 +4,7 @@
 }
 
 a{
-    color: rgb(47, 27, 53);
+    color:#ffffff;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -80,6 +80,20 @@ header{
     font-size: 1.5vw;
     margin-top: 2vw;
     letter-spacing: .1rem;
+}
+
+.btn-header{
+    background-color: #4CAF50;
+    display: block;
+    padding: 1rem 2rem;
+    border: transparent;
+    border-radius: 8px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    cursor: pointer;
 }
 
 main{
@@ -229,9 +243,9 @@ select:focus {
 
     .header-text{
         width: 100%;
-        margin: 0 auto;
+        margin: 500px auto 0 auto;
         float: none;
-        margin-top: 1rem;
+        margin-top: 12vh;
     }
 
     .header-text h1{
@@ -245,14 +259,22 @@ select:focus {
     }
     
     .header-text p{
-        font-size: 3vw;
+        font-size: 4vw;
         margin-top: 2vw;
         letter-spacing: .1rem;
-        line-height: 1.3em;
+        line-height: 1.em;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0rem 2rem;
+        padding-bottom: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .btn-header{
+       background-color: #00c3ff;
+       padding: 1rem 3rem;
+       margin: 0 auto;
     }
 }
 

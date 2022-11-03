@@ -31,7 +31,9 @@
         <div class="header-text">
             <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
             <p>Reiciendis, iure! Commodi, harum illum dolore libero nemo itaque amet, reprehenderit quam odio magnam quisquam cum inventore aliquam id placeat iusto? Architecto!</p>
+            <button type="button" class="btn-header">Saiba mais</button>
         </div>
+        
     </header>
 
     <main>
