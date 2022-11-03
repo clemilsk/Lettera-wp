@@ -54,13 +54,19 @@ nav{
 
 header{
     background-image: url('../images/bg-banner.png');
-    background-color: #fd8522;
+    background-color: #0ef193; 
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
 }
+
+.corbgh-one{background-color: #ff7b2e; background-blend-mode: multiply;}
+.corbgh-two{background-color: #1087d6; background-blend-mode: multiply;}
+.corbgh-three{background-color: #019c54; background-blend-mode: multiply;}
+.corbgh-four{background-color: #da0d2f; background-blend-mode: multiply;}
+.corbgh-five{background-color: #9422ff; background-blend-mode: multiply;}
 
 .header-text{
     font-family: Roboto, sans-serif;
