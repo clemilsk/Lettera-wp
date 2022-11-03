@@ -28,48 +28,10 @@
             </ul>
         </nav>
 
-        <div class="card-container">
-            <div class="card-btnf">
-                <button class="btn-item btn-yellow">Busca rápida</button>
-                <button class="btn-item btn-grey">Busca por código</button>
-                <button class="btn-item btn-grey">Busca por nome</button>
-            </div>
-
-            <div class="card-titulo">
-                <p>Encontre <strong>aqui</strong> o seu <strong>destino!</strong></p>
-            </div>
-
-            <div class="form">
-                <form action="/" method="get">
-                    <div class="form-row">
-                        <select>
-                            <option value="01"> Valor 01 </option>
-                            <option value="02"> Valor 02 </option>
-                            <option value="03"> Valor 03 </option>
-                        </select>
-
-                        <select>
-                            <option value="01"> Valor 02 </option>
-                            <option value="02"> Valor 02 </option>
-                            <option value="03"> Valor 03 </option>
-                        </select>
-
-                        <select>
-                            <option value="01"> Valor 03 </option>
-                            <option value="02"> Valor 02 </option>
-                            <option value="03"> Valor 03 </option>
-                        </select>
-
-                        <select>
-                            <option value="01"> Valor 04 </option>
-                            <option value="02"> Valor 02 </option>
-                            <option value="03"> Valor 03 </option>
-                        </select>
-
-                        <button class="btn-item btn-green">Buscar</button>
-                    </div>
-                </form>
-            </div>
+        <div class="header-text">
+            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+            <p>Reiciendis, iure! Commodi, harum illum dolore libero nemo itaque amet, reprehenderit quam odio magnam quisquam cum inventore aliquam id placeat iusto? Architecto!</p>
         </div>
     </header>
+
     <main>

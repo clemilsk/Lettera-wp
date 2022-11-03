@@ -1,7 +1,8 @@
-<?php 
-get_header();
-get_footer();
-?>
+<?php get_header(); ?>
+
+<h1 class="">Teste</h1>
+
+<?php get_footer(); ?>
 
 
 
