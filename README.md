@@ -1,3 +1,3 @@
-# Lettera - Site com CMS WordPress
-## Desenvolvimento de Tema.
-Site com Custom Post Types.
+# Lettera - Site with CMS WordPress
+## Theme Development.
+Site with Custom Post Types.
