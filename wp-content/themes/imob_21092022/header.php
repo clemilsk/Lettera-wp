@@ -28,12 +28,33 @@
             </ul>
         </nav>
 
+
+
         <div class="header-text">
-            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
-            <p>Reiciendis, iure! Commodi, harum illum dolore libero nemo itaque amet, reprehenderit quam odio magnam quisquam cum inventore aliquam id placeat iusto? Architecto!</p>
-            <button type="button" class="btn-header">Saiba mais</button>
+
+            <?php
+            $destaques = array(
+                'post_type' => 'header',
+                'posts_per_page' => 1,
+            );
+
+            $destaquesheader = new WP_Query($destaques);
+            if ($destaquesheader->have_posts()) :
+
+                while ($destaquesheader->have_posts()) : $destaquesheader->the_post();
+
+                $custom_post_type = get_post_meta($post->ID, 'custom_input', true);
+            ?>
+
+                    <h1><?php the_title(); ?></h1>
+                    <p><?php the_content(); ?></p>
+                    <button type="button" class="btn-header"><?php echo $custom_post_type; ?></button>
+
+            <?php endwhile;
+            endif; ?>
+
         </div>
-        
+
     </header>
 
     <main>
