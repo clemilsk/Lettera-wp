@@ -198,7 +198,6 @@ select:focus {
     border: none;
 }
 
-
 .btn-item{
     border: none;
     padding: 15px 32px;
@@ -213,6 +212,26 @@ select:focus {
 .btn-item:hover{
     opacity: 0.8;
 }
+
+.dropdown{
+    background-color: #333;
+    position: absolute;
+    top: 8vh;
+    border-radius: .3rem;
+    padding-top: .5rem;
+    padding-bottom: .8rem;
+    padding-right: 1.3rem;
+    display: none;
+}
+
+.dropdown .li-dropdown{
+    list-style: none;
+    position: relative;
+    line-height: 2.5rem;
+    letter-spacing: 0px !important;
+}
+
+.tms{font-size: 12px; margin-left: 5px;}
 
 @media screen and (max-width: 960px){
     a{ color: #ffffff; }
@@ -231,17 +250,22 @@ select:focus {
         position: absolute;
         top: 0;
         right: 0;
-        width: 50vw;
+        width: 100vw;
         height: 100vh;
         display: none;
         z-index: 99;
     }
 
     .menu-list li{
-        margin-left: 0;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin: 5vh 0;
     }
+
+    .dropdown-li{
+        display: block;
+        list-style: none;
+    }
+
+    .tms{font-size: 10px;}
 
     .card-container{
         z-index: 1;

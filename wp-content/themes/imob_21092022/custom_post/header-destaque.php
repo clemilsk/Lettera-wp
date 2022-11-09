@@ -56,9 +56,9 @@ function custom_post_type_header() {
 }
 add_action( 'init', 'custom_post_type_header', 0 );
 
+
 // Register Metabox
 add_action("add_meta_boxes", "custom_metabox");
-
 function custom_metabox(){
     add_meta_box("custom_metabox", "Título Button", "custom_metabox_field", "header", "normal", "high");
 }
@@ -74,9 +74,9 @@ add_action("save_post", "salvando");
 function salvando(){
 	global $post;
 
-	if( define('DOING_AUTOSAVE', '') && DOING_AUTOSAVE){
+	if( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE ){
 		return $post->ID;
 	}
 
-	update_post_meta($post->ID, "custom_input", $_POST["custom_input"]);
+	update_post_meta(@$post->ID, "custom_input", @$_POST["custom_input"]);
 }
