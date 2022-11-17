@@ -63,24 +63,28 @@ function headerBackgroundColor(){
 
 function dropdownMenuSet(){
   
-
     document.getElementById("servicos").addEventListener("click", function(){
+        var drop = document.getElementById("dropdown");
+        var link = document.getElementById("servicos");
         var atributo = this.getAttribute('data-titulo-type');
-        if(! atributo == ""){
-          var drop = document.getElementById("dropdown");
-          drop.style.setProperty('display','block');
-          //alert(atributo);
+
+        if(! atributo == '' && link.style.display == ''){
+            drop.style.setProperty('display','block');
+            link.style.setProperty('display','block');
+        }else{
+            drop.style.setProperty('display','none');
+            link.removeAttribute('style');
         }
     });
 
-    document.querySelector(".dropdown").addEventListener("mouseover", function(){
+
+  /* document.querySelector(".dropdown").addEventListener("mouseover", function(){
       var drop = document.getElementsByClassName("dropdown");
-          drop.style.setProperty('display','block');
+          drop.style.setProperty('display','none');
     });
 
     document.querySelector(".dropdown").addEventListener("mouseout", function(){
       var drop = document.getElementById("dropdown");
-          drop.style.setProperty('display','none');
-    });
-
+          drop.style.setProperty('display','block');
+    }); */
 }
